@@ -1,0 +1,27 @@
+<table border="1" cellspacing="0" cellpadding="0">
+  <thead>
+     <tr>
+       <th>Id</th>
+       <th>Name</th>
+       <th>City</th>
+       <th>Mobile</th>
+       <th colspan="2"></th>
+     </tr>
+  </thead>
+
+  <tbody>
+    <tr *ngFor="let student of students">
+      <td>{{student.id}}</td>
+      <td>{{student.name}}</td>
+      <td>{{student.city}}</td>
+      <td>{{student.mobile}}</td>
+      <td>
+         <button (click)="delete(student)">Delete</button>
+      </td>
+      <td>
+        <button>More</button>
+      </td>
+    </tr>
+  </tbody>
+
+</table>
